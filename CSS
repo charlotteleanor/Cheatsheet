@@ -1,0 +1,47 @@
+*{
+  font-family: Helvetica;
+  background-color: RosyBrown;
+  text-align: center;
+  margin: auto;
+}
+
+table{
+  width: 80%;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+table td{
+  font-size: 15px;
+  font-family: "Courier New";
+  color: white;
+  padding: 5px;
+  border: 1px dotted papayawhip;
+}
+
+th{
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Courier New";
+  background-color: papayawhip;
+  padding: 5px;
+  border: 1px solid Rosybrown;
+}
+
+p{
+  font-family: "Courier New";
+  color: white;
+}
+
+a{
+  font-family: "Courier New";
+  color: white;
+}
+
+table#example{
+  text-align: center;
+}
+
+h1{
+  padding-top:50px;
+}
