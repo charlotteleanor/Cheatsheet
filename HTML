@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Tables</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Explaining HTML Tables</h1><br>
+    <p>See below for an explanation of <span><a href="#tags">tags</a></span> and <span><a href="#attributes">attributes</a></span> relating to HTML tables</p><br>
+    <h2 id="tags">
+      HTML Tags
+    </h2><br>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;table&gt;</td>
+          <td>Table</td>
+          <td>The wrapper element for all HTML tables</td>
+        </tr>
+        <tr>
+          <td>&lt;thead&gt;</td>
+          <td>Table Header</td>
+          <td>The container for rows that define the column headers of a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tbody&gt;</td>
+          <td>Table Body</td>
+          <td>The container for rows that define the main data section of a table</td>
+        </tr>
+         <tr>
+          <td>&lt;tfoot&gt;</td>
+          <td>Table Footer</td>
+          <td>The container for rows that define the footer of a table</td>
+        </tr>
+         <tr>
+          <td>&lt;tr&gt;</td>
+          <td>Table Row</td>
+          <td>This is a row container, it is used in the header, body and footer areas of a table</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt;</td>
+          <td>Table Data</td>
+          <td>This contains data (information) and is used inside the &lt;tr&gt; container in the main and footer sections</td>
+        </tr>
+        <tr>
+          <td>&lt;th&gt;</td>
+          <td>Table Header</td>
+          <td>This has a similar function as a &lt;td&gt; however, it can only be used inside the &lt;thead&gt; container. It holds the data (eg. title) of a column and is used instead of &lt;td&gt;</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <h2 id="attributes">
+      HTML Attributes
+    </h2>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td>colspan</td>
+          <td>Column Span</td>
+          <td>This allows data to span more than 1 column when set ="2" or above</td>
+        </tr>
+         <tr>
+          <td>rowspan</td>
+          <td>Row Span</td>
+          <td>This allows data to span more than 1 row when set ="2" or above</td>
+        </tr>
+        <tr>
+          <td>scope</td>
+          <td>Scope</td>
+          <td>This allows a header to be allocated to a column or a row (eg. &lt;th scope="row"&gt;). A row title must be placed in &lt;tbody&gt; not in the header container</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <p>The table below gives an example of all the above tags and attributes in use:</p>
+    <br>
+    <table id="example">
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+          <th scope="col">Saturday</th>
+          <th scope="col">Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <th scope="row">Morning</th>
+          <td rowspan="2">Meeting</td>
+          <td colspan="3">Working Away</td>
+          <td>Meeting</td>
+          <td>Gym</td>
+          <td>Gym</td>
+        </tr>
+        <tr>
+          <th scope="row">Afternoon</th>
+          <td colspan="3">Working Away</td>
+          <td>Parent's Evening</td>
+          <td>Shopping</td>
+          <td>Football Lesson</td>
+        </tr>
+        <tr>
+          <th scope="row">Evening</th>
+          <td>Family Dinner</td>
+          <td colspan="3">Working Away</td>
+          <td>Work Night Out</td>
+          <td>Dinner with the Girls</td>
+          <td>Family Dinner</td>
+       </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </body>
+</html>
